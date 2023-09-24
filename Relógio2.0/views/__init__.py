@@ -1,20 +1,22 @@
 from tkinter import *
 from time import *
-from . import cores as cor
+from . import estilo
 
 class Tela:
     def __init__(self,root):
         root.title('Teste')
         root.geometry('600x320')
-        root.configure(background= cor.cor1)
+        root.configure(background= estilo.cor1)
 
 class itens:
     def __init__(self,root):
-        self.data = Label(root , bg = cor.cor1 , fg = cor.cor2 )
+        self.data = Label(root , bg = estilo.cor1 , fg = estilo.cor2 , font=estilo.fonte1)
         self.data.pack(pady=10)
 
-        self.hora = Label(root , bg = cor.cor1 , fg = cor.cor2 , font =("",30) )
+        self.hora = Label(root , bg = estilo.cor1 , fg = estilo.cor2 , font = estilo.fonte2 )
         self.hora.pack()
+        self.timer = Label(root , bg = estilo.cor1 , fg = estilo.cor2 , text = "00:00" , font=estilo.fonte3)
+        self.timer.pack()
     
     def get_data(self):
         data_atual = strftime('%a, %d, %b, %Y')
