@@ -16,8 +16,8 @@ class itens:
 
         self.hora = Label(root , bg = estilo.cor1 , fg = estilo.cor2 , font = estilo.fonte2 )
         self.hora.pack()
-        
-        self.timer = Label(root , bg = estilo.cor1 , fg = estilo.cor2 , text = "00:00" , font=estilo.fonte3)
+        ]
+        (root , bg = estilo.cor1 , fg = estilo.cor2 , text = "00:00" , font=estilo.fonte3)
         self.timer.pack()
 
         self.text_min = Label(root , bg = estilo.cor1 , fg = estilo.cor2 , text = "min" , font = estilo.fonte1)
