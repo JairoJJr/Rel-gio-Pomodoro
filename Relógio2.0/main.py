@@ -10,5 +10,3 @@ app = C_controller(root)
 root .mainloop()
 
 
-
-
